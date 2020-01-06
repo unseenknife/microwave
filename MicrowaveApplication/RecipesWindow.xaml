@@ -1,0 +1,18 @@
+﻿<Window x:Class="MicrowaveApplication.RecipesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MicrowaveApplication"
+        mc:Ignorable="d"
+        Title="RecipesWindow" Height="333.333" Width="320.629">
+    <Grid>
+        <TextBox x:Name="recipeDesc" HorizontalAlignment="Left" Height="83" Margin="36,63,0,0" IsReadOnly="True" TextWrapping="Wrap" VerticalAlignment="Top" Width="237"/>
+        <ComboBox x:Name="cbRecipe" HorizontalAlignment="Left" Height="23" Margin="36,21,0,0" VerticalAlignment="Top" Width="237" SelectionChanged="CbRecipe_SelectionChanged"/>
+        <TextBox x:Name="RecipeNameInput" HorizontalAlignment="Left" Height="25" Margin="36,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158"/>
+        <TextBox x:Name="RecipeTimeInput" HorizontalAlignment="Left" Height="25" Margin="208,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65"/>
+        <Button x:Name="RecipeAddButton" Content="Add recipe" HorizontalAlignment="Left" Height="20" Margin="36,246,0,0" VerticalAlignment="Top" Width="237" Click="AddRecipe"/>
+        <Button x:Name="RecipeRemoveButton" Content="Delete recipe" HorizontalAlignment="Left" Height="23" Margin="36,159,0,0" VerticalAlignment="Top" Width="237" Click="RemoveRecipe"/>
+
+    </Grid>
+</Window>
